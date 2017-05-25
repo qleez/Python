@@ -5,9 +5,10 @@
 # http://rosalind.info/problems/fib/
 
 def fib(n, k):
-    a, b = 1, 1
-    for i in range(2, n):
-        # 只需要保存最近两个月的数量即可
-        a, b = b, k * a + b
-    return b
+    if n < 0:
+         print("n must be a positive value")
+    if n is 0 or n is 1:
+        return 1
+    else: 
+        return (fib(n-1, k) + k * fib(n-2, k))
 fib(5, 3)
