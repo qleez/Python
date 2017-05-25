@@ -6,8 +6,8 @@
 
 def fib(n, k):
     a, b = 1, 1
-    for i in range(2, int(n)):
+    for i in range(2, n):
         # 只需要保存最近两个月的数量即可
-        a, b = b, int(k) * a + b
-    print(b)
+        a, b = b, k * a + b
+    return b
 fib(5, 3)
