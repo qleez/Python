@@ -11,4 +11,4 @@ str = ''
 str1 = str.split(' ')
 
 for key, value in collections.Counter(str1).items():
-    print('%s %s' %(key, value))
+  print('%s %s' %(key, value))
