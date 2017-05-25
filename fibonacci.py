@@ -19,8 +19,8 @@ Mathematically: f(0) = 1, f(1) = 1, f(n) = f(n-1) + k * f(n-2).
 '''
 
 def fib(n, k):
-    if n == 1 or n == 2
+    if n == 1 or n == 2:
         return 1
     else: 
         return (fib(n-1, k) + k * fib(n-2, k))
-fib(5, 3)
+print(fib(5, 3))
