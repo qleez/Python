@@ -19,9 +19,7 @@ Mathematically: f(0) = 1, f(1) = 1, f(n) = f(n-1) + k * f(n-2).
 '''
 
 def fib(n, k):
-    if n < 0:
-         print("n must be a positive value")
-    if n is 0 or n is 1:
+    if n == 1 || n == 2
         return 1
     else: 
         return (fib(n-1, k) + k * fib(n-2, k))
